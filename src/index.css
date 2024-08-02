@@ -1,0 +1,24 @@
+@charset "UTF-8";
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #1F1B30;
+  height: 100vh;
+}
+.App{
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width:480px) {
+  .App{
+    flex-direction: column;
+    height: 100vh;
+  }
+}
