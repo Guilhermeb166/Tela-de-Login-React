@@ -16,17 +16,29 @@ img {
 }
 
 @media screen and (max-width:480px) {
+    
     .left{
-        margin: 20px 0 25px;
+        margin: 20px 0 60px;
         width: 100vw;
         height: 50vh;
+        
     }
 
     h2{
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     img{
-        width: 50vw;
+        width: 60%;
+        
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:834px){
+    h2{
+        font-size: 4.8vw;
+    }
+    img{
+        width: 85%;
     }
 }
