@@ -80,14 +80,14 @@ input::placeholder {
     overflow: hidden;
 }
 
-i {
+svg {
     color: #f0ffffde;
     margin: auto;
     font-size: 1.5em;
     cursor: pointer;
 }
 
-i:hover {
+svg:hover {
     opacity: .8;
 }
 

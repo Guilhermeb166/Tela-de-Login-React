@@ -1,4 +1,4 @@
-import "boxicons/css/boxicons.min.css";
+import { BiShow,BiHide  } from "react-icons/bi";
 import { useState } from 'react'
 import styles from '../Components/css-modules/Login.module.css'
 
@@ -35,9 +35,11 @@ function Login (){
                             <input className={styles.senha} type={showPassword ? 'text' : 'password'}
                             //utiliza o operador ternário para definir o tipo de input (text ou password) com base no estado showPassword. Se showPassword for true, o tipo de input será 'text', mostrando a senha em texto claro.
                             placeholder='Senha' id='senha' name='senha' required onChange={(e)=>setSenha(e.target.value)}/>
-                            <i className={showPassword ? 'bx bxs-hide' : 'bx bxs-show'}
-                            //também utiliza o operador ternário para definir a classe do ícone com base no estado showPassword.
-                            onClick={mostrarSenha}></i>
+                            <p className={styles.PasswordView}  onClick={mostrarSenha}>
+                                {showPassword ? <BiShow/> : <BiHide/>}
+                            {/*também utiliza o operador ternário para definir a classe do ícone com base no estado showPassword.*/}
+                           
+                            </p>
                         </div>
                     </div>
                     <button className={styles.btn} onClick={Logar}>LOGIN</button>
